@@ -1,45 +1,63 @@
-# اسکیل سئوی عمو احسان
+# Claude Ecommerce SEO Skill (Amoo Ehsan SEO)
 
-یک Skill برای Claude که سئوی فروشگاه‌های اینترنتی فارسی و به‌خصوص صفحات دسته‌بندی محصولات را انجام می‌دهد.
+**A Claude skill that does ecommerce SEO for online stores, with a focus on product category pages. Built for Persian (Farsi) stores on WooCommerce and WordPress.**
 
-ساخته‌شده توسط احسان احمدزاده، [آقای دیجیتال](https://www.aghayedigital.com/).
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/aghayedigital/claude-ecommerce-seo-skill/releases)
+[![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-orange.svg)](#install)
 
-## قابلیت‌ها
+[فارسی](README.fa.md) | English
 
-- ممیزی سئو سایت فروشگاهی
-- تحقیق کلمات و ساختار صفحات دسته‌بندی
-- تولید محتوای سئو فارسی
-- تحلیل Search Console
-- لینک‌سازی داخلی خودکار (کلمه کلیدی ← مقصد، با ساخت لینک هنگام نمایش صفحه)
-- چک‌لیست پنج‌مرحله‌ای بررسی هر دسته‌بندی: Search Console، وضعیت دسته، ایندکس، پیلار و کلاستر، لینک‌سازی داخلی
+Category pages bring most of the organic traffic to an online store, and they are usually the weakest pages on the site. This skill gives Claude a repeatable process to audit them, find the right keywords and structure, write the content, and check the results in Google Search Console.
 
-## پیش‌نیازها
+Made by Ehsan Ahmadzadeh, [Aghaye Digital](https://www.aghayedigital.com/).
 
-برای اینکه Claude داده‌های واقعی پروژه را ببیند، این دو ابزار را نصب کن:
+## What it does
 
-1. **افزونه Claude in Chrome** برای دیدن Search Console. در همان کروم باید به حساب گوگلی لاگین باشی که به Search Console پروژه دسترسی دارد. [راهنمای نصب](https://support.claude.com/en/articles/12012173-getting-started-with-claude-in-chrome)
-2. **افزونه وردپرس WPVibe** برای دیدن خود سایت (صفحات، دسته‌بندی‌ها، محصولات، تنظیمات سئو). روی سایت وردپرس نصب و فعال کن و سایت را با لینک تأیید یک‌کلیکی به Claude وصل کن. [صفحه افزونه](https://wordpress.org/plugins/vibe-ai/)
+- Ecommerce SEO audit of an online store
+- Keyword research and structure for product category pages
+- SEO content writing in natural Persian
+- Google Search Console analysis
+- Automatic internal linking (keyword to target URL, links built when the page renders)
+- A five-step check for every category: Search Console, category status, indexing, pillar and cluster, internal links
 
-بدون این دو ابزار هم می‌توانی از اسکیل استفاده کنی، ولی باید داده‌ها (مثلاً خروجی CSV از Search Console و لیست URLها) را خودت بدهی.
+## Install
 
-## نصب (Claude Code / Cowork)
+In Claude Code or Cowork:
 
 ```
-/plugin marketplace add aghayedigital/amoo-ehsan-seo
+/plugin marketplace add aghayedigital/claude-ecommerce-seo-skill
 /plugin install amoo-ehsan-seo@aghayedigital-seo
 ```
 
-## استفاده
+## Recommended tools
 
-بعد از نصب، کافی است بنویسی:
+To let Claude see real project data, connect these two:
 
+1. **Claude in Chrome** to read Search Console. Chrome must be signed in to the Google account that has access to the property. [Setup guide](https://support.claude.com/en/articles/12012173-getting-started-with-claude-in-chrome)
+2. **WPVibe WordPress plugin** to read the site itself (pages, categories, products, SEO settings). [Plugin page](https://wordpress.org/plugins/vibe-ai/)
+
+Without them the skill still works, but you provide the data yourself (Search Console CSV export, list of URLs).
+
+## Usage
+
+After installing, just ask:
+
+- "Audit the SEO of the home appliances category on my site"
+- "Suggest a content structure and keywords for this category"
 - «سئوی صفحه دسته‌بندی لوازم برقی سایتم را بررسی کن»
-- «برای این دسته‌بندی ساختار محتوا و کلمات کلیدی پیشنهاد بده»
 
-## مجوز
+## Roadmap
 
-MIT
+- [x] Skill skeleton and five-step category checklist
+- [ ] Category content templates
+- [ ] Search Console report template
+- [ ] Example outputs from real stores
 
-## وضعیت
+## Contributing
 
-نسخه 0.1.0 (اسکلت اولیه). محتوای تخصصی دسته‌بندی محصولات به‌مرور اضافه می‌شود.
+Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+[MIT](LICENSE)
